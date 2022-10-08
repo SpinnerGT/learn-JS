@@ -1,4 +1,4 @@
-import {restaurant} from "./destructing_object.js"
+import {restaurant} from "./restaurantVar.js"
 
 "use strict"
 
@@ -32,6 +32,7 @@ const str = "Jane"; // J a n e
 //1)shallow copy
 const mainMenuCopy = [...restaurant.mainMenu];
 
+// copy and add new
 const new_rst = {foundedIn: 1998, founder: "WYJ", ...restaurant};
 
 
