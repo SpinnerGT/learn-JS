@@ -2,7 +2,7 @@
 
 import {restaurant} from "./restaurantVar.js";
 
-// array
+//一. array
 const menu = [...restaurant.mainMenu, ...restaurant.starterMenu]
 // only item
 for (const menuItem of menu) {
@@ -21,3 +21,22 @@ for (const [i, el] of menu.entries()) {
 
 // look into array.entries()
 //console.log([...menu.entries()])
+
+
+// 二. object
+
+// keys
+const properties = Object.keys(restaurant.openingHours) // is array
+let openStr = `we are open on ${properties.length} days:`;
+for (const obj of properties) {
+    openStr += `${obj},`
+}
+
+// values
+const values = Object.values(restaurant.openingHours)
+
+// entries  : key/value
+const entries = Object.entries(restaurant.openingHours);
+for (const [key, {open, close}] of entries) {
+
+}

@@ -71,7 +71,7 @@ const {team1, x: draw, team2} = game.odds;
 // along with the number of goals that were scored in total (number of player names passed in)
 function printGoals(...players) { // pack to array
     const total = players.length;
-    console.log(`${total} goals were scored`)
+    //  console.log(`${total} goals were scored`)
 }
 
 printGoals(...game.scored)// unpack
@@ -82,5 +82,7 @@ printGoals(...game.scored)// unpack
 // Print to the console which team is more likely to win, WITHOUT using an if/else statement or the ternary operator.
 //const winner = team1 > team2 ? team1 : team2;
 
-team1 > team2 && console.log(team1)
-team1 < team2 && console.log(team2)
+//team1 > team2 && console.log(team1)
+//team1 < team2 && console.log(team2)
+
+export {game};
